@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body bgcolor="yellow">
+
+<h3>Add Train</h3>
+
+<form action="" method="post">
+<table>
+   <tbody>
+        <tr>Train Name</tr>
+        <tr><input type="text" name=""></tr>
+   </tbody>
+
+</table>
+</form>
+
+
+
+</body>
+
+
+</html>

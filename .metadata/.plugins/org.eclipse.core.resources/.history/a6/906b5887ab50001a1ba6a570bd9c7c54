@@ -1,0 +1,50 @@
+package com.booking.App.dto;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.annotation.Generated;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class Train implements Serializable{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@Column(name = "TRAIN_NO")
+	private int trainNo;
+	
+	@Column(name="TRAIN_NAME")
+	private String trainName;
+	
+	@Column(name="TRAIN_TYPE")
+	private String trainType;
+	
+	@Column(name="TRAIN_FARE")
+	private double trainFare;
+	
+	@Column(name="STARTING_POINT")
+	private String startingPoint;
+	
+	@Column(name="DESTINATION_POINT")
+	private String destinationPoint;
+	
+	
+	//this will used to store data in db
+	@Temporal(TemporalType.TIME)
+	@Column(name = "ARRIVAL_TIME")
+	private Date timeOfArrival;
+	
+	@Temporal(TemporalType.TIME)
+	@Column(name = "DEPARTURE_TIME")
+	private Date timeOfDeparture;
+
+}

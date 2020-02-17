@@ -1,0 +1,40 @@
+package com.booking.App.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.booking.App.dto.Train;
+import com.booking.App.service.TrainService;
+
+@Controller
+public class TrainController {
+	
+	//auto the service
+	
+	
+	//this method will be used to display save page for train
+	@RequestMapping("/saveTrainPage")
+	public String displaySaveTrainPage() {
+		return "saveTrainPage";
+	}
+	
+	//this method is to get data from <form>tag
+	//in saveTrainPage.jsp file
+	@RequestMapping(value = "/saveTrain", method = RequestMethod.POST)
+	public String saveTrain(Train train) {
+		
+		
+		int pk=trainService.saveTrain(train);
+//		if(pk>0) {
+//			return "saveTrainPage";
+//		}
+//		
+//		
+//		System.out.println(train);
+		
+		return "saveTrainPage";
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.booking.App.repository;
+
+public class TrainRepository {
+
+}

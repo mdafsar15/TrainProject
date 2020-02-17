@@ -1,0 +1,33 @@
+package com.booking.App.repository;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.booking.App.dto.Train;
+
+@Repository
+public class TrainRepository {
+	
+	
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public int saveTrain(Train train)
+	{
+		int pk=0;
+		Transaction tx=null;
+		try(Session session=)
+	}
+	
+	public int saveTrain(Train train)
+	{
+		
+	}
+	
+	
+
+}

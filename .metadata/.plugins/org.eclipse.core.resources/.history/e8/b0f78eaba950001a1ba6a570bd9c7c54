@@ -1,0 +1,5 @@
+package com.booking.App.dto;
+
+public class Train {
+
+}

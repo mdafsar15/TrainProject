@@ -1,0 +1,24 @@
+package com.booking.App.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.booking.App.dto.Train;
+import com.booking.App.repository.TrainRepository;
+
+@Service
+public class TrainService {
+	
+	@Autowired
+	private TrainRepository trainRepository;
+	
+	public int saveTrain(Train train)
+	{
+		//dummy  buisness logic
+//		double gst=18.0;
+//		double fare=train.getTrainFare();
+		return trainRepository.saveTrain(train);
+		
+	}
+
+}

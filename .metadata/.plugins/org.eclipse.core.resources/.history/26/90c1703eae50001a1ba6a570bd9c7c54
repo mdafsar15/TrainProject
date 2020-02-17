@@ -1,0 +1,16 @@
+package com.booking.App.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TrainController {
+	
+	
+	//this method will be used to display save page for train
+	@RequestMapping("/saveTrainPage")
+	public String displaySaveTrainPage() {
+		return "saveTrainPage";
+	}
+
+}
